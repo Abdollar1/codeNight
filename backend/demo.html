@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ASAP'S CALCULATOR</title>
+    <style>
+        body {
+            background: #333;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #myresults {
+            background: white;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        input,
+        select {
+            min-width: 60%;
+            height: 40px;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            border-bottom: 1px solid rgb(216, 216, 216);
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        input:hover {
+            height: 30px;
+            min-width: 59%;
+            transition: ease-in 0.2s;
+        }
+        
+        select:focus {
+            outline: none;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            background: rgb(0, 255, 85);
+        }
+        
+        button {
+            border-radius: 10px;
+            font-size: 16px;
+            color: #333;
+            min-width: 60%;
+            height: 30px;
+            font-weight: bold;
+            border: none;
+        }
+        
+        button:hover {
+            background: #333;
+            color: #fff;
+            border: 1px solid #fff;
+            transition: ease-in-out 0.5s;
+        }
+        
+        header {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        footer {
+            font-size: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>A$AP CALCULATOR</p>
+    </header>
+    <input type="number" id="input1" required placeholder="Input value" />
+    <br> <br>
+    <input type="number" id="input2" required placeholder="Input value" />
+    <br>
+    <br>
+
+    <form>
+        <select id="opt">
+            <option value="1">add</option>
+            <option value="2">sub</option>
+            <option value="3">mul</option>
+            <option value="4">div</option>
+        </select>
+    </form>
+    <br>
+
+    <br>
+    <button onclick="change()" type="submit">Calculate</button><br/><br/>
+    <label id="screen">Results: <span id=myresults>-</span></label>
+    <br> <br>
+    </div>
+
+    <footer>
+        <p>This is a property of A$ap Hackers <br/> Suported by Leon Cvdedd<br/>&copy; 2021 - All Rights Reserved.</p>
+    </footer>
+    <!-- JAVASCRIPT STARTS HERE -->
+    <script>
+        function change() {
+
+            var option = document.getElementById("opt").selectedIndex; //selects the index of the otion selected in the drop down
+
+            var txt = parseInt(document.getElementById("input1").value);
+            var txt2 = parseInt(document.getElementById("input2").value);
+
+            var v1 = 0; //This variable will hold our answer for the computations
+
+            //addition
+            if (option == 0) {
+                v1 = txt + txt2;
+                document.getElementById("myresults").innerHTML = v1;
+            }
+
+            //subtraction
+            else if (option == 1) {
+                v1 = txt - txt2;
+                document.getElementById("myresults").innerHTML = v1;
+
+            }
+            //multiplication
+            else if (option == 2) {
+                v1 = txt * txt2;
+                document.getElementById("myresults").innerHTML = v1;
+
+            }
+
+            //division
+            else if (option == 3) {
+                v1 = txt / txt2;
+                document.getElementById("myresults").innerHTML = v1;
+            }
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

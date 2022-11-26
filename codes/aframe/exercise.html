@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+
+<title>class exercise</title>
+    <script src="release/aframe.js"></script>
+
+</head>
+<body>
+<a-scene>
+    <a-asset>
+        
+        <img id="floor" src="../aframe/wrappers/newimages%20(1).jpg">
+   <img id="sky" src="texturesOnline/clear-sunny-sky.jpg">
+        <img id="carving" src="../aframe/texturesOnline/carving2.png">
+        
+        <img id="zinc" src="../aframe/wrappers/product-image-663484283_large.jpg">
+        <img id="milk" src="texturesOnline/milk.jpg">
+        
+        <img id="milo" src="../aframe/wrappers/Milo-Logo.jpg">
+        
+        <img id="carving2"  src="../aframe/texturesOnline/carving2.png">
+        
+        <img id="transparent" src="../aframe/wrappers/transparent%20ruff.jpg">
+        
+     <!--table top-->
+        <img id="wood" src="../aframe/texturesOnline/wood.jpg">
+        
+        <!--leg-->
+        <img id="leg" src="../aframe/texturesOnline/wood2.jpg">
+        
+        <img id="pillar" src="../aframe/texturesOnline/wood3.jpg">
+          <img id="flaps" src="../aframe/texturesOnline/Bordo_Zolla_01_Mat_baseColor.jpg">
+           
+        <!-- ruffing-->
+        <img id="ruffing" src="../aframe/texture/Erba_01_TileMat_baseColor.jpg">
+
+    </a-asset> 
+    <!-- creating the ground-->
+    
+      <a-plane color="white" src="#floor" rotation="-90 0 0" scale="10000 10000 1" repeat="1000 1000" ></a-plane>
+               <!-- camera-->
+    <a-camera position="0 2 20" user-height="1.6"></a-camera>
+              
+  
+    
+    <!-- sky-->
+     <a-sky src="#sky"  radius="300" side="double" rotation="5000" position="200 -60 -79"></a-sky>
+                <!--milk-->
+    <a-cylinder color="white" src="#milk" repeat="2 1" scale="0.2 0.40 0.2" position="-2.0 2.5 5.0"></a-cylinder>
+    
+                    <!--milo-->
+    <a-cylinder color="white" src="#milo"  repeat="2 1" scale="0.2 0.4 0.2" position="2.0 2.5 5.0"></a-cylinder>
+
+         <!-- table head-->
+     <a-box  color="ffffff"  src="#wood"  scale="6 0.2 3.6" position="0 2 4.7" ></a-box>
+        <!-- legs-->
+     <a-box color="white" src="#leg" scale=" 0.2 3 0.3" position="-2.7 0.4 4.0" ></a-box>
+    
+     <a-box color="white" src="#leg" scale=" 0.2 3 0.3" position="2.6 0.4 4.0" ></a-box>
+    
+     <a-box color="white" src="#leg" scale=" 0.2 3 0.3" position="2.6 0.4 6" ></a-box>
+    
+     <a-box color="white" src="#leg" scale=" 0.2 3 0.3" position="-2.6 0.4 6" ></a-box>
+    
+    <!-- frontchair-->
+     
+     
+    <a-box color="white" src="#carving2" scale="2 0.2 1.2" position="0.0 1.0 7"></a-box>
+    
+    
+    <a-box color="white" src="#carving2"scale="1.8 1.4 0.2" position="0.0 1.8 7.5"></a-box>
+         <!--leg-->
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="0.8 0.5 6.6"></a-box>
+    
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="0.8 0.5 7.4"></a-box>
+   
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="-0.8 0.5 6.6 "></a-box>
+    
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="-0.8 0.5 7.4"></a-box>
+    
+    <!-- back chair-->
+      
+    <a-box color="#fffbfb" src="#carving2" scale="2 0.2 1.2" position="0.0 1.0 2.5"></a-box>
+    
+    
+    <a-box color="white"  src="#carving2" scale="1.8 1.4 0.2" position="0.1 1.8 2.0"></a-box>
+         <!--leg-->
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="0.8 0.5 2.1"></a-box>
+    
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="0.8 0.5 2.9"></a-box>
+   
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="-0.8 0.5 2.9"></a-box>
+    
+    <a-box color="white" src="#leg" scale="0.2 1 0.2" position="-0.8 0.5 2.1"></a-box>
+    
+      <!--pillars-->
+    <!-- back pillar-->
+    <a-cylinder color="white" src="#pillar" scale="0.5 10.0 0.5" position="3.5 0.5 1 "></a-cylinder>
+     
+    <a-cylinder  color="white" src="#pillar"scale="0.5 10.0 0.5" position="-3.5 0.5 1 "></a-cylinder>
+    
+     <!--front pillars-->
+    <a-cylinder  color="white" src="#pillar" scale="0.5 10.0 0.5" position="3.5 0.5 9.5"></a-cylinder>
+    
+    <a-cylinder  color="white" src="#pillar" scale="0.5 10.0 0.5" position="-3.5 0.5 9.5"></a-cylinder>
+    
+    <!--front ruff stick-->
+     
+   <a-box color="white" src="#flaps" scale="10.0 0.2 0.2" position="0.0 5.6 1.0" ></a-box>
+    <!-- top most-->
+    <a-box color="white" src="#flaps" scale="10.0 0.2 0.2" position="0.0 9.0 4.25" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="10.0 0.2 0.2" position="0.0 5.6 9.5" ></a-box>
+    
+     <!--inner ruff stick-->
+     <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="0.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="1.0 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="2.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="3.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="4.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="-1.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="-2.0 5.6 5.3" ></a-box>
+    
+   <a-box color="white" src="#flaps"scale="0.2 0.2 8.6" position="-3.0 5.6 5.3" ></a-box>
+  
+   <a-box color="white" src="#flaps" scale="0.2 0.2 8.6" position="-4.0 5.6 5.3" ></a-box>
+    
+    <!-- front top zinc-->
+    <a-box color="white" src="#zinc"  scale="10.5 0.2 6.8" position="0.0 7.5 6.9" rotation="35.0 0 0" ></a-box>
+    
+     <!-- back top zinc-->
+      <a-box color="white" src="#zinc"  scale="10.5 0.2 5.0" position="0.0 7.5 2.5" rotation="-50.0 0 0" ></a-box>
+ 
+    <!--top board ruffing-->
+     <a-box color="white" src="#transparent"   scale="0.9 0.2 8.6" position="-3.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"      scale="0.9 0.2 8.6" position="-2.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"      scale="0.9 0.2 8.6" position="-1.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"     scale="0.8 0.2 8.6" position="-0.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"    scale="0.9 0.2 8.6" position="0.5 5.6 5.3" ></a-box>
+     <a-box color="white" src="#transparent"    scale="0.9 0.2 8.6" position="1.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"    scale="0.9 0.2 8.6" position="2.5 5.6 5.3" ></a-box>
+    
+     <a-box color="white" src="#transparent"     scale="0.9 0.2 8.6" position="3.5 5.6 5.3" ></a-box>
+    
+    
+     <!-- housing -->
+    <a-box ></a-box>
+    
+    </a-scene>
+</body>
+    </html>

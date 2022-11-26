@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Animation Trials</title> 
+        <script src="releases/aframe.js"></script>
+    </head>
+    <body>
+        <a-scene>
+        <!-- Asset Management System-->
+        <a-assets>
+            <img id="floor" src="texturesOnline/floor-1024.jpg">
+            <img id="floor-NRM" src="texturesOnline/floor-1024-NRM.jpg">
+        </a-assets>
+            <!--Ground-->
+            <a-plane src="#floor" shader="flat" rotation="-90 0 0" scale="5 5 1"></a-plane>
+            
+            <!-- Camera -->
+            <a-entity position="0 0 8">
+            <a-camera></a-camera>
+            </a-entity>
+            <!--Rotating Box-->
+            <a-box  color="#AA00000"
+                    to="0 360 0"
+                   repeat="indefinite"
+                   dur="5000"
+                   easing="linear">
+            </a-box>
+        </a-scene>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+        </title>
+    
+    <script src="release/aframe.js"></script>
+    </head>
+<body>
+    <a-scene>
+    <a-assets>
+        
+        <!--img id="floor-NRM" src="texturesOnline/floor-1024-NRM.jpg"-->
+        
+            <img id="floor" src="texturesOnline/floor-1024.jpg">
+       <!--img id="clear-sunny" src="texturesOnline/clear-sunny-sky.jpg"-->
+        <!--img id="360-paranoma" src="../aframe/texturesOnline/360/Panorama%20in%20courtyard.jpg"-->
+        <img id="averge" src="../aframe/texturesOnline/average-height.png">
+        
+        </a-assets>
+    <!-- creaating the ground-->
+    <a-plane  src="floor" shader="flat" rotation=" -90 90 0" scale="5 5 1">
+        
+        
+            <a-cylinder color="#aa0000"
+                radius="0.5"
+                height= "2"
+                position="-2 1 0"
+                
+                
+                
+                ></a-cylinder>
+        
+        <-box  color="#00aa00"
+              height="2"
+              depth="4"
+              position="2 1 0"
+              ></-box>
+        
+        </a-plane>
+        
+        
+
+    <!-- create a sky-->
+    <!--y src="#clear-sunny" radius="5" size="double" ratation="0 64 0></a-sky-->
+    
+
+    
+    </a-scene>
+    
+    
+    
+    </body>
+
+
+
+</html>

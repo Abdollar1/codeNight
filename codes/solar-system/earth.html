@@ -1,0 +1,119 @@
+<!soctype html>
+<html>
+    <head>
+        <title>Aframe</title>
+        <script src="src-script/0.7/aframe.js"></script>   </head>
+<body>
+   <a-scene>
+       <!-- asset management system-->
+       <a-assets>
+          <img id="earth" src="texture/2k_earth_daymap.jpg"> 
+          <img id="mercury" src="texture/2k_mercury.jpg"> 
+          <img id="venus" src="texture/2k_venus_surface.jpg"> 
+          <img id="sun" src="texture/2k_sun.jpg"> 
+          <img id="mars" src="texture/2k_mars.jpg"> 
+          <img id="jupitar" src="texture/2k_jupiter.jpg"> 
+          <img id="saturn" src="texture/2k_saturn.jpg"> 
+          <img id="uranus" src="texture/2k_uranus.jpg"> 
+          <img id="neptune" src="texture/2k_neptune.jpg"> 
+          <img id="pluto" src="texture/2k_earth_daymap.jpg"> 
+          <img id="plane" src="texture/2k_stars_milky_way.jpg"> 
+    
+       </a-assets>
+        <a-plane src="#plane"  position="0 0 -100" scale="400 310 0"></a-plane>
+       <!-- camera-->
+       <a-entity position="0 0 37"
+                 user-height="1.0">
+       <a-camera></a-camera>
+          <!-- ambient light-->
+        <a-entity light="type: ambient;
+                         intensity: 1.0"></a-entity>
+          
+       </a-entity>
+       <!--rotation-->
+       <!-- sun-->
+       <a-sphere src="#sun"   position="0 2 0" scale="3 3 3">
+       <a-animation attribute="rotation" to="0 360 0"
+                    repeat="indefinite" dur="0" easing="linear" ></a-animation>
+    
+       </a-sphere>
+       
+        <!-- mercury-->
+       <a-entity  position="0 2 0"
+                  scale="1.5 1.5 1.5">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="40000" easing="linear"></a-animation>
+           <a-sphere src="#mercury" color="white" position="4 0 0">
+           
+           </a-sphere>
+           
+       </a-entity>
+       <!-- venus-->
+       <a-entity position="0 2 0"
+                  scale="1 1 1">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="100000" easing="linear"></a-animation>
+           <a-sphere  
+                    src="#venus" position="9 0 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+       
+       <!-- earth-->
+       <a-entity position="0 2 0">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="75000" easing="linear"></a-animation>
+           <a-sphere src="#earth" color="#ffda0d" position="13.5 0 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+       <!-- mars-->
+       <a-entity position="0 2 0">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="250000" easing="linear"></a-animation>
+           <a-sphere src="#mars"   position="15 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+    
+<!-- jupitar-->
+       <a-entity position="0 2 0"
+                 scale="4 4 4">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="800000" easing="linear"> </a-animation> 
+           <a-sphere src="#jupitar"   position="18 0 5">
+            
+           </a-sphere>
+          
+       </a-entity>
+           
+<!-- saturn-->
+       <a-entity position="0 4 0">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="20000" easing="linear"></a-animation>
+           <a-sphere src="#saturn"   position="20 0 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+                  
+<!-- uranus-->
+       <a-entity position="0 4 0">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="12000" easing="linear"></a-animation>
+           <a-sphere src="#uranus"   position="22 0 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+                       
+<!-- neptune-->
+       <a-entity position="0 4 0">
+       <a-animation attribute="rotation" to="0 -360 0" repeat="indefinite" dur="90000" easing="linear"></a-animation>
+           <a-sphere src="#neptune"   position="24 0 0">
+            
+           </a-sphere>
+           
+       </a-entity>
+        
+    
+    </a-scene>
+    
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background:yellow;
+    text-align: center;
+        
+}
+        del{
+            font-size:250%;}
+address{
+    font size:300%;
+}
+h1{
+    border:1px solid black;
+}
+h1{
+    text-align: center;
+}
+a{
+    font-size:20px;
+    text-decoration: none;
+}
+a:hover{
+    color:aqua;
+}
+img.logo{
+    width:600px;
+    height:599px;
+    float:right;
+}

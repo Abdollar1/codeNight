@@ -1,0 +1,55 @@
+ .main {
+     text-align: center;
+     font-size: 12;
+     background-color: aqua;
+     font-family: monospace;
+ }
+ 
+ .home-flex {
+     background-color: black;
+     width: 100%;
+     border-radius: 0.9em;
+ }
+ 
+ #menu {
+     display: flex;
+     position: relative;
+     min-width: 200%;
+     height: 2em;
+     margin-left: 34%;
+     padding-top: 1%;
+     padding-bottom: 1%;
+ }
+ 
+ .menuitem {
+     padding-left: 1.5%;
+ }
+ 
+ .order {
+     background-color: white;
+ }
+ 
+ #order_menu {
+     border-radius: 0.9em;
+     background-color: rgb(98, 173, 173);
+ }
+ 
+ #delivery_menu {
+     border-radius: 0.9em;
+     background-color: rgb(134, 177, 177);
+     padding-bottom: 0.5em;
+ }
+ 
+ .product {
+     border-radius: 0.9em;
+     background-color: rgb(27, 66, 66);
+     color: white;
+ }
+ 
+ .footer {
+     background-color: rgb(2, 2, 2);
+     min-height: 3em;
+     padding-top: 0.5em;
+     color: white;
+     padding-bottom: 0.9em;
+ }

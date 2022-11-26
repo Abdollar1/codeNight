@@ -1,0 +1,14 @@
+.home {
+    background-color: aqua;
+    text-align: center;
+    width: 50em;
+    border-radius: 2em;
+    margin-left: 25em;
+    font-family: monospace;
+    font-size: 12;
+    font: bold;
+}
+
+#button:hover {
+    background-color: aqua;
+}

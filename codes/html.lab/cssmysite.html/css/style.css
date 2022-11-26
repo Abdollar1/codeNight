@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding:0;
+    text-align: center;
+    font-size: 1.50rem;
+    color:#3A4241;
+
+background-color:lightcoral
+}
+/* top cloud*/
+.top-cloud{
+    position: absolute;
+    right: 199px;
+    top: 3px;
+    padding-bottom: 100px;
+   
+}
+
+hr{
+    border-style: none;
+
+    border-width: 5px;
+    border-top-style: dotted;
+    width: 90px;
+    border-color: #ccc;
+    margin:100px auto;
+    
+    
+
+    }
+    
+.h1{
+    color:#66bfbf;
+    font-size: 5.65;
+    position: absolute;
+    left: 100px;
+    
+    
+}
+.programmer{
+
+color:#66bfbf;
+    font-size: 5.65;
+    margin-top: 50px;
+
+}
+/* button cloud*/
+.button-cloud{
+    position: absolute;
+    left: 150px;
+    top: 190px;
+}
+
+.button-container{ 
+background-color: #66BFBF; 
+    height: 690px;
+
+}
+.im{
+    border-radius: 50%;
+    width: 20%;
+    height:30%;
+}
+.intro{
+    margin: auto;
+    font-size: 100%;
+    text-align: center;
+    
+}
+
+
+
+.sub-middle-container{ 
+background-color:#89BFBF;
+    height: auto
+    width: auto;
+   
+}
+    }
+.top-container{ 
+background-color: #11999E;
+    height: 500px;
+   
+}
+h2{
+    color: ##11399e;
+    
+    
+}
+
+
+h3{
+    color: #11999e;
+    
+    font-family:fantasy;
+    font-size: 1.2rem;
+}
+.skill-row{
+    text-align: left;
+    margin: 80px;
+    width:auto;
+}
+.p{
+    
+    text-align: left;
+}
+
+.skill{
+height: auto;
+    margin: 0px;        
+
+}
+.computer-img{
+ width: 200px;
+    float: left;
+    margin-right: 30px;
+    
+    
+}
+.chillie-img{
+  width:130px;
+    height: auto;
+    margin-left: 50px;
+ float: right;
+    
+   
+    
+}
+
+
+.footer{
+    height: 200px;
+    color: gray;
+    
+    
+}

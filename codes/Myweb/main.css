@@ -1,0 +1,58 @@
+#topfolder{
+    background-color: rgb(63, 63, 102);
+    text-transform:uppercase;
+    text-decoration-color:rgb(138, 136, 143);
+    text-align: center;
+
+     
+    }
+
+    #second_div{
+        background-color: rgb(38, 38, 53);
+         text-transform:uppercase;
+         text-decoration-color:rgb(138, 136, 143);
+         padding-top: 0.1%;
+         
+
+          
+
+        
+        }
+
+
+        #body{
+            background-color: rgb(37, 37, 39);
+            background: url(images/smiley_guy-3.jpg);
+           
+
+            }
+.fx{
+    background-color:  rgb(28, 63, 28);
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 0.1%;
+    
+    
+}
+
+.delivery{
+    background-color:  rgb(36, 28, 53);
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 0.1%;
+}
+
+.iphone{
+    background-color:  rgb(93, 83, 50);
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 0.1%;
+}
+
+.watch{
+    background-color:  rgb(116, 114, 107);
+    text-align: center;
+    text-transform:uppercase;
+    padding-top: 0.1%;
+}
+

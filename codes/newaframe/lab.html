@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+    <title>
+        LAB EXERCISE
+        </title>
+         <script src="releases/aframe.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+        <a-assets>
+         <img id="floor" src="texturesOnline/images.jpg">
+        <img id="milo" src="texturesOnline/images%20(2).jpg">
+        <img id="milk" src="texturesOnline/images%20(3).jpg">
+        <img id="table" src="texturesOnline/images%20(4).jpg">
+        <img id="leg" src="texturesOnline/images%20(5).jpg">
+        </a-assets>
+             <a-plane src="#floor"
+                     rotation="-90 0 0" scale="5 5 1" 
+                     shadow="receive: true">
+            </a-plane>
+            
+            <a-box position='0 1 0' width="2" height = "0.09" depth="2" src="#table"  >
+            </a-box>
+            <a-box color="blue" position='-0.8 0.6 0.9' width='0.06' height='0.8' depth='0.06' src="#leg" >
+            </a-box>
+             <a-box color="blue" position='-0.8 0.6 -0.9' width='0.06' height='0.8' depth='0.06' src="#leg" >
+            </a-box>
+             <a-box color="blue" position='0.8 0.6 0.9' width='0.06' height='0.8' depth='0.06' src="#leg" >
+            </a-box>
+             <a-box color="black" position='0.8 0.6 -0.9' width='0.06' height='0.8' depth='0.06' src="#leg" >
+            </a-box>
+        </a-scene>
+    </body>
+</html>

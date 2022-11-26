@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+    <head>
+        <title></title>
+        <script src="releases/aframe.js"></script>
+    </head>
+    <body>
+        <a-scene>
+<!--            Asset Management System-->
+            <a-assets>
+                <img id="floor" src="textures/floor-1024.jpg"/>
+                <img id="firefox" src="textures/firefox-quantum-1024.png"/>
+                <a-asset-item id="room" src="model/room.gltf"></a-asset-item>
+            
+            </a-assets>
+                <!--            Default Lightingin the a-frame scene-->
+<!--            1 ambient light-->
+            
+            <a-entity light="type: directional; intensity:0.6; color:#ffffff; castShadow:true;" position="-0.5 1 1" ></a-entity>
+            <a-entity light="type: ambient; color:#bbb"></a-entity>
+<!--            sky-->
+            <a-sky color="#ffffff">
+            
+            </a-sky>
+<!--            ground-->
+            <a-plane src="#floor" rotation="-90 0 0" scale="10000 10000 1" repeat="1000 1000" >
+            </a-plane>
+            
+<!--            camera-->
+            <a-entity position="0 0 5" >
+                <camera></camera>
+            </a-entity>
+            
+<!--            blue room | x = 4m y= 5m z = 14m-->
+            <a-entity gltf-model="#room"></a-entity>
+            
+<!--            firefox quantum logo-->
+            <a-image src="#firefox"  scale = "2 2 1" position = "-2 3 -2.49" >
+            </a-image>
+<!--            light grey panel-->
+            <a-box color="#e0e0e0" scale="5 0.1 1" position="0 4 0" ></a-box>
+<!--            yellow box-->
+            <a-box color="#ffeb3b" scale="0.5 0.5 0.5" position="-1 1 0" >
+                <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000" easing="linear" >
+                </a-animation>
+            </a-box>
+
+<!--            orange box-->
+            <a-box id="orange-box" color="#ff5722" scale="0.5 0.5 0.5" position="1 1 0" >
+                <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="5000" easing="linear" ></a-animation>
+            </a-box>
+            
+
+        </a-scene>
+    </body>
+</html>

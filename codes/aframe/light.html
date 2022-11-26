@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+       
+
+    <title>new lighting</title>
+          <script src="release/aframe.js"></script>
+    </head>
+<body>
+    <a-scene>    
+<a-assets>
+     
+    <img id="floor" src="../texture/floor-1024-2.jpg">
+    <img id="firefox" src="../texture/firefox-quantum-1024.png">
+     <a-asset-item id="room" src="../model1/room.gltf"></a-asset-item>
+    
+    
+         
+ </a-assets> 
+   <!--sky -->
+        <a-sky color= "#ffffff"></a-sky>
+       <!-- ground -->
+        <a-plane src="#floor"
+                 rotation="-90 0 0"
+                 scale="10000 10000 1"
+                 repeat="1000 1000"
+                 shadow="receive: true"
+                 ></a-plane>
+        
+        <!-- camera-->
+        <a-entity position="0 0 5">
+        <a-camera></a-camera>
+        </a-entity>
+    <!--  blue room-->
+        <a-entity gltf-model="#room"
+                  shadow="receive: true"></a-entity>
+    <!-- firefox-->
+        <a-image src="#firefox"
+                 scale="2 2 1"
+                 position="-2 3 -2.49"></a-image>
+    <!-- light gray panel-->
+        <a-box color ="#E0E0E0" scale="5 0.1 1" position="0 4 0"
+               shadow="cast: true"></a-box>
+    <!-- yellow box-->
+        <a-box color="yellow"
+               scale="0.5 0.5 0.5"
+               position="-1 1 0"
+               shadow="cast: true"
+               shader="flat"
+               >
+            <a-animation attribute="rotation"
+            to="0 360 0"
+            repeat="indefinite"
+            dur="5000"
+            easing="linear"></a-animation>
+        </a-box>
+        <!-- orange box-->
+          <a-box id="orange-box"
+                 color="#ff5722"
+               scale="0.5 0.5 0.5"
+               position="1 1 0"
+                 shadow="cast: true"
+               >
+            <a-animation attribute="rotation"
+            to="0 360 0"
+            repeat="indefinite"
+            dur="5000"
+            easing="linear">
+              </a-animation>
+               <a-animation attribute="position"
+            to="1 1 -2"
+            repeat="indefinite"
+            direction="alternate" 
+            dur="5000">
+            </a-animation>
+        </a-box>
+      <!-- ambient light-->
+        <a-entity light="type: ambient;
+                         intensity: 0.2"></a-entity>
+        <!-- point light-->
+        <a-entity light="type: point;
+                         intensity: 0.8;
+                         distance: 10;
+                         castShadow: true"
+                  position="0 2 1.5">
+               
+        <a-animation attribute="light.intensity"
+                    from="0.8"
+                    to="0"
+                    repeat="indefinite"
+                    direction="alternate" 
+                    dur="5000"
+                    ></a-animation>
+               </a-entity>
+        <!-- spot-->
+        <a-entity light="type: spot;
+                         target: #orange-box;
+                         color: #c40070;
+                         angle:30;
+                         penumbra: 0.1;
+                         castShow: true"
+                  position="0 3 1">
+                   </a-entity>
+    </a-scene>
+
+</body>
+
+</html>

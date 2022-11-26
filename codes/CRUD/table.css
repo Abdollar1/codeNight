@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url(images/2up-SQ-L_fleece_20191009.jpg);
+    background-size: cover;
+}
+table{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    
+}
+tr {
+    background: #fff;
+     
+}
+th{
+    padding: 30px;
+}
+td{
+    padding: 20px;
+
+}
+.add{
+    font-size: 25px;
+    background-color: aliceblue;
+    padding: 10px;
+    color:#000;
+    margin-left: 40%;
+    text-decoration: none;
+}

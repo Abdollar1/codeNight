@@ -1,0 +1,47 @@
+ <!doctype html>
+<html>
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <script src="release/aframe.js"></script>
+    <script src="https://dist.3d.io/3dio-js/1.1.x/3dio.min.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <a-scene >
+        
+    <a-assets>
+        
+        <img id="floor-NRM" src="texturesOnline/floor-1024-NRM.jpg">
+        
+            <img id="floor" src="texturesOnline/floor-1024.jpg">
+       <img id="clear-sunny" src="texturesOnline/clear-sunny-sky.jpg">
+        
+        </a-assets>
+    <!-- creaating the ground-->
+    <a-plane material="color:#ffffff;
+             src:#floor; repeat:5000 5000;  normal-texture-repeat:5 5;"
+    rotation="-90 0 0"; scale="10000 10000" >
+        
+        
+        </a-plane>
+    <!-- create a sky-->
+    <a-sky src="#clear-sunny" radius="5" size="double" ratation="0 64 0"></a-sky>
+    
+    
+    <a-entity geometry="primitive: box;" material="color:blue; "scale="2.5 2.5 2.5" position="0 10 50"></a-entity>
+        
+        
+    <a-entity geometry="primitive: box;" material="color:pink; "scale="8 6 2.5" position="20 30 30"></a-entity>
+        
+        <a-entity geometry="primitive:circle;" material="color:green;" height=90px; width=699px;></a-entity>
+    
+    
+    
+    </a-scene>
+  </body>
+    </html>

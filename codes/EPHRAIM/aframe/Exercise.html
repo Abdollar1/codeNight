@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="releases/aframe.js"></script>
+    </head>
+    
+    <body>
+    <a-scene>
+        <a-asset>
+        <img src=images/download.jpeg id="milk"/>
+        <img src="images/milo.jpg" id="milo"/>
+        <img src="images/plastice%20table.jpg" id="plasticTable"/>
+        <img src="images/plastic%20chair.jpg" id="plasticChair"/>
+        <img src="textures/floor-1024.jpg"/>
+            <img src="textures/clear-sunny-sky.jpg" id="sky" >
+        <img src="textures/TexturesCom_FloorsCheckerboard0034_1_M.jpg" id = "floor"/>
+        </a-asset>
+        <a-sky src="#sky"></a-sky>
+        <a-plane src="#floor" shader="flat" rotation= "-90 0 0" scale = "50 50 50" repeat="50 50 50">
+        </a-plane>
+        <a-box src="textures/Mura_03_TileMat_baseColor.jpg" height="2.5" width="0.1" depth="0.1"></a-box>
+        <a-box src="textures/Mura_03_TileMat_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="3 0 0"></a-box>
+        <a-box src="textures/Mura_03_TileMat_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="3 0 1"></a-box>
+        <a-box src="textures/Mura_03_TileMat_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="0 0 1"></a-box>
+        <a-box src="textures/Mura_03_TileMat_baseColor.jpg" height="0.1" width="5" depth="2" position="1.5 1.3 0.5"></a-box>
+        
+        <a-cylinder src="images/milo%20wrapper.png" position="0 1.7 0" width="0.1" height="1" depth="0.1" scale="0.3 0.7 0.2"></a-cylinder>
+        <a-cylinder src="#milk" position="2 1.6 0" width="0.1" height="1" depth="0.1" scale="0.15 0.5 0.1"></a-cylinder>
+        
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="5" width="0.1" depth="0.1" position="-2 0 0"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="5" width="0.1" depth="0.1" position="-2 0 0.5"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="-1.5 0 0"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="-1.5 0 0.5"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.7" depth="0.6" position="-1.7 1.2 0.255"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.1" depth="0.5" position="-2 2 0.2"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.1" depth="0.5" position="-2 2.3 0.2"></a-box>
+        
+        
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="5" width="0.1" depth="0.1" position="5.5 0 0"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="5" width="0.1" depth="0.1" position="5.5 0 0.5"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="5 0 0"></a-box>
+        <a-box src="textures/Passerella_Legno_TopMura_TileMura_baseColor.jpg" height="2.5" width="0.1" depth="0.1" position="5 0 0.5"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.7" depth="0.6" position="5.2 1.2 0.255"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.1" depth="0.5" position="5.5 2 0.2"></a-box>
+        
+        <a-box src="textures/Terreno_TileMat_9_baseColor.jpg" height="0.1" width="0.1" depth="0.5" position="5.5 2.3 0.2"></a-box>
+        
+        
+        
+        <a-entity position ="0 0 4" >
+            <a-camera></a-camera>
+        </a-entity>
+        </a-scene>
+        
+    
+    </body>
+</html>

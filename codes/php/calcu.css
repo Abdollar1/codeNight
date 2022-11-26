@@ -1,0 +1,19 @@
+
+#main {
+    text-align: center;
+    background-color: dimgrey;
+}
+
+#finput {
+    border-bottom-right-radius: 20px;
+    border-bottom-style: dotted;
+    border-bottom-color: aquamarine;
+}
+
+#sinput {
+    
+    border-bottom-right-radius: 20px;
+    border-bottom-style: dotted;
+    border-bottom-color: aquamarine;
+
+}

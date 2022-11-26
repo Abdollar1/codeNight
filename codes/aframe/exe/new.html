@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+       
+
+    <title>new lighting</title>
+          <script src="release/aframe.js"></script>
+    </head>
+<body>
+    <a-scene>    
+<a-assets>
+     
+    <img id="floor" src="../texture/floor-1024-2.jpg">
+    <img id="firefox" src="../texture/firefox-quantum-1024.png">
+     <a-asset-item id="room" src="../model1/room.gltf"></a-asset-item>
+    
+    
+        
+ </a-assets> 
+   <!--sky -->
+        <a-sky color= "#ffffff"></a-sky>
+       <!-- ground -->
+        <a-plane src="#floor"
+                 rotation="-90 0 0"
+                 scale="10000 10000 1"
+                 repeat="1000 1000"
+                 ></a-plane>
+        
+        <!-- camera-->
+        <a-entity position="0 0 5">
+        <a-camera></a-camera>
+        </a-entity>
+    <!--  blue room-->
+        <a-entity gltf-model="#room"></a-entity>
+    <!-- firefox-->
+        <a-image src="#firefox"
+                 scale="2 2 1"
+                 position="-2 3 -2.49"></a-image>
+    <!-- light gray panel-->
+        <a-box color ="#eoeoeo" scale="5 0.1 1" position="0 4 0"></a-box>
+    <!-- yellow box-->
+        <a-box color="yellow"
+               scale="0.5 0.5 0.5"
+               position="-1 1 0"
+               >
+            <a-animation attribute="rotation"
+            to="0 360 0"
+            repeat="indefinite"
+            dur="5000"
+            easing="linear"></a-animation>
+        </a-box>
+    </a-scene>
+
+</body>
+
+</html>

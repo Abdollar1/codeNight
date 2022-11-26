@@ -1,0 +1,67 @@
+ 
+<html>
+ <head>
+<title>let try coding with javascript</title>
+</head>
+<body id="main">
+    <div id="first">
+    <h3>welcome to the guess game.</h3>
+    <h4>do you want to guess? <br><strong>remember,if you get it correct,</strong>you win 100 dollars</h4>
+    <h2>choose a number between <em>0 & 9 </em>to win a price</h2>
+</div>
+ <p> <input type="text" id="inputone"> 
+    
+    <button id="enter">enter</button>
+
+
+    <br>
+    <h3 id="output1"></h3>
+    <h3 id="output2"></h3>
+</p>  
+
+ 
+
+<script type="text/javascript">
+//  var randomColor = '#'+ math.floor(math.random()*16777215).toString(16);
+function getRandomColor(){
+var letters = '012356789ABCDEF'.split('');
+var color = '#';
+for(var i = 0; i < 6; i++){
+  color += letters[Math.floor(Math.random() * 16)];
+}
+return color;
+}
+
+document.getElementById("main").style.backgroundColor = getRandomColor(); 
+
+document.getElementById("main").style.color = "black";
+
+// document.getElementById("first").style.backgroundColor = randomColor;
+document.getElementById("main").style.color = "white";
+document.getElementById("enter").onclick = function(){
+    var textentered = document.getElementById("inputone").value;
+    document.getElementById("main").style.backgroundColor = getRandomColor(); 
+     
+
+    var random_generator = Math.random();
+    random_number= random_generator * 6;
+    guessNumber = Math.floor(random_number);
+
+
+ if(textentered == guessNumber){
+   document.getElementById("output1").innerHTML = "Congratulation";
+   document.getElementById("output2").innerHTML = "number guess was "+ guessNumber; 
+}
+else if(textentered!=guessNumber){
+    document.getElementById("output1").innerHTML = "opps! try again";
+    document.getElementById("output2").innerHTML = "number guess was "+ guessNumber; 
+}
+
+}
+ 
+</script>
+
+
+ 
+</body>
+</html>

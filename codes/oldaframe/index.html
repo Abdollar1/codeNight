@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+    <head>
+        <titl>
+            Dining Table
+        </titl>
+        <script src="releases/aframe.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <!--Assets Management System-->
+            <a-assets>
+            <img id="floor" src="texturesOnline/floor-1024.jpg">
+            <img id="sky" src="texturesOnline/clear-sunny-sky.jpg">
+            <img id="floor-NRM" src="texturesOnline/floor-1024-NRM.jpg"> 
+            <img id="tabletop" src="texturesOnline/images%20(1).jpg">
+            <img id="legs" src="texturesOnline/images%20(4).jpg">
+            <img id="milo" src="texturesOnline/images%20(3).jpg">
+            <img id="milk" src="texturesOnline/images%20(2).jpg">
+            </a-assets>
+            <!--Sky-->
+           <a-sky src="#sky"
+                  rotation="0 64 0">
+            </a-sky>
+            <!-- 1 Directional Light-->
+           <!-- <a-entity light="type: directional;
+                             color: #FFFFFF;
+                             intensity: 0.6;
+                             castShadow: true"
+                      position="-0.5 1 1">
+            </a-entity> -->
+            <!--Ground-->
+            <a-plane material="color:#999999";
+                               rotation="-90 0 0"
+                               repeat="500 500 "
+                               scale="100 100 1"
+                               normal-texture-repeat="500 500"
+                                src="#floor">
+            </a-plane>
+        <!-- Camera -->
+       <a-camera position="0 2 1"
+                      user-height="1.2"></a-camera>
+            <!-- Tabletop -->
+             <a-box color="tomato"
+                   position="0 1.8 0"
+                   height="0.03"
+                   depth="2"
+                   width="3"
+                    src="#tabletop"
+                   >
+                <!-- Table legs --> 
+            <a-box color="black"
+                   position="-1.4 -0.4 0.85"
+                   width="0.05"
+                   height="0.8"
+                   depth="0.05">
+                </a-box>
+            <a-box color="black"
+                   position="-1.4 -0.4 -0.85"
+                   width="0.05"
+                   height="0.7"
+                   depth="0.05">
+              </a-box>
+                 <a-box color="black"
+                   position="1.4 -0.4 0.7"
+                   width="0.05"
+                   height="0.8"
+                   depth="0.05">
+                </a-box>
+                 <a-box color="black"
+                   position="1.4 -0.4 -0.7"
+                   width="0.05"
+                   height="0.8"
+                   depth="0.05">
+                </a-box>
+            <!-- Milo Can -->
+                 <a-cylinder radius="0.08"
+                             height=0.16
+                             position="0 0.2 0"
+                             side="double"color="grey"
+                             open-top="true"
+                             src="#milk"></a-cylinder>
+                 <!-- Milk can -->
+                 <a-cylinder radius="0.04"
+                             height=0.08
+                             position="0.4 0.1 0"
+                             side="double"color="grey"
+                             open-ended="true"
+                             src="#milo"></a-cylinder></a-box>
+            <!-- Left Chair -->
+                <a-box width="0.5"
+                       height="0.02"
+                       depth="0.4"
+                       side="double"
+                       color="grey"
+                       position="-2 1.7 0 "
+                       src="#tabletop">
+            <a-cylinder height="0.6"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.19 0 0.18">
+             </a-cylinder>
+            <a-cylinder height="0.3"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.19 -0.15 0.18">
+             </a-cylinder>
+            <a-cylinder height="0.6"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.19 0 -0.18">
+             </a-cylinder>
+            <a-cylinder height="0.2"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.19 -0.15 -0.18">
+             </a-cylinder>
+                <!-- Chair bars-->
+                      <a-cylinder               height="0.4"
+                            rotation="-90 0 0"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.18 0.28 -0.008">
+                 </a-cylinder>
+              <a-cylinder               height="0.4"
+                            rotation="-90 0 0"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.18 0.13 -0.004">
+             </a-cylinder>
+                    
+                  
+            
+            </a-box>
+            
+            <!-- Right Chair -->
+                <a-box width="0.5"
+                       height="0.02"
+                       depth="0.4"
+                       side="double"
+                       color="grey"
+                       position="2 1.7 0 "
+                       src="#tabletop">
+            <a-cylinder height="0.6"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.19 0 0.18">
+             </a-cylinder>
+            <a-cylinder height="0.3"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.19 -0.15 0.18">
+             </a-cylinder>
+            <a-cylinder height="0.6"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.19 0 -0.18">
+             </a-cylinder>
+            <a-cylinder height="0.2"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="-0.19 -0.15 -0.18">
+             </a-cylinder>
+                <!-- Chair bars-->
+                      <a-cylinder               height="0.4"
+                            rotation="-90 0 0"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.18 0.28 -0.008">
+                 </a-cylinder>
+              <a-cylinder               height="0.4"
+                            rotation="-90 0 0"
+                            color="black"
+                            radius="0.01"
+                            side="double"
+                            position="0.18 0.13 -0.004">
+             </a-cylinder>
+                    
+                     
+            </a-box>
+                
+        </a-scene>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

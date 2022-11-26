@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+    <head>
+    <script src="releases/aframe.js"></script>
+    </head>
+    <body>
+        <a-scene>
+<!--        Asset Management System-->
+            <a-assets>
+            <img id="floor" src="textures/TexturesCom_FloorsCheckerboard0034_1_M.jpg"/>
+            <img id="average-height" src="textures/average-height.png"/>
+            </a-assets>
+<!--            Ground-->
+            <a-plane src="#floor" shader="flat" rotation="-90 0 0" scale="5 5 1" >
+                
+            </a-plane>
+<!--            Cylinder-->
+            <a-cylinder color="#aa8000" radius="0.5" height="2"  position = "-2 1 0" >
+                
+            </a-cylinder>
+<!--            Box-->
+            <a-box color="#00aa00" height="2" depth="4" position="2 1 0"  >
+            </a-box>
+<!--            Average height | Human eye level--> 
+            <a-image src="#average-height" scale="2 2 1" position="0 1 0"></a-image>
+<!--            Camera positioning-->
+            <a-camera >
+            </a-camera>
+            <a-entity position="0 0 5">
+                <a-camera user-height= "0.5" active= "false"></a-camera>
+            </a-entity>
+            <a-entity position="0 0 5">
+                <a-camera user-height= "1.0" active= "false"></a-camera>
+            </a-entity>
+            <a-entity position="0 5 5">
+                <a-camera user-height="1.5"></a-camera>
+            
+            <a-entity>
+                
+            
+        </a-scene>
+    </body>
+</html>
